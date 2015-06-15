@@ -11,7 +11,7 @@ cd $ISODIR
 wget http://na.mirror.garr.it/mirrors/deft/deftZ-rc1.iso
 cd $ERPXEDIR/er/plugins
 git clone https://github.com/eoyslebo/ERPXE-deftz
-mv ERPXE-deftz deftz
+mv ERPXE-deftz/deftz deftz
 mount $ISODIR/deftZ-rc1.iso /cdrom
 cp /cdrom/preseed/lubuntu.seed $ERPXEDIR/er/plugins/deftz/lubuntu.seed
 cp /cdrom/isolinux/splash.png $ERPXEDIR/er/plugins/deftz/deftz.png
