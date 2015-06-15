@@ -1,0 +1,16 @@
+label live
+  menu label ^DEFT-Zero Linux Live-O/S (GUI mode, RAM preload)
+  kernel /er/plugins/deftz/vmlinuz
+  append  file=/er/plugins/deftz/lubuntu.seed boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/deftz toram initrd=/er/plugins/deftz/initrd.lz quiet splash --
+label live-noram
+  menu label ^DEFT-Zero Linux Live-O/S (GUI mode)
+  kernel /er/plugins/deftz/vmlinuz
+  append  file=/er/plugins/deftz/lubuntu.seed boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/deftz initrd=/er/plugins/deftz/initrd.lz quiet splash --
+label live-text
+  menu label ^DEFT-Zero Linux Live-O/S (Text mode)
+  kernel /er/plugins/deftz/vmlinuz
+  append  file=/er/plugins/deftz/lubuntu.seed boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/deftz initrd=/casper/initrd.lz quiet text --
+label check
+  menu label ^Check media device for defects
+  kernel /er/plugins/deftz/vmlinuz
+  append  boot=casper netboot=nfs nfsroot=10.0.0.1:/tftpboot/er/shares/deftz integrity-check initrd=/er/plugins/deftz/initrd.lz quiet -- splash

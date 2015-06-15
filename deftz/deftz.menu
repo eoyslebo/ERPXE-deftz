@@ -1,0 +1,10 @@
+MENU BEGIN DEFT Zero
+MENU TITLE DEFT Zero
+MENU LABEL ^DEFT Zero
+MENU BACKGROUND er/plugins/deftz/deftz.png
+
+MENU INCLUDE er/plugins/deftz/deftzmain.menu
+  
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

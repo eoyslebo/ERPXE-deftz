@@ -1,0 +1,8 @@
+.:
+deftzmain.menu
+deftz.menu
+deftz.png
+filelist.txt
+initrd.lz
+lubuntu.seed
+vmlinuz
